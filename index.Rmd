@@ -1,0 +1,177 @@
+---
+title: "CV"
+author: rodrigo
+date: "`r Sys.Date()`"
+output:
+  pagedown::html_resume:
+    css: ['css/styles.css', 'resume']
+    # set it to true for a self-contained HTML page but it'll take longer to render
+    self_contained: true
+---
+
+
+
+
+
+```{r, include=FALSE}
+knitr::opts_chunk$set(
+  results='asis', 
+  echo = FALSE
+)
+
+library(glue)
+library(tidyverse)
+library(pagedown)
+
+# Set this to true to have links turned into footnotes at the end of the document
+PDF_EXPORT <- FALSE
+
+# Holds all the links that are inserted for placement at the end
+links <- c()
+
+source('parsing_functions.R') # Functions for building sections from CSV data
+source('common_variables.R')  # Small variables for non-csv data such as intro text
+
+# Load csv with position info
+position_data <- read_csv('positions.csv')
+```
+
+
+```{r}
+# When in export mode the little dots are unaligned, so fix that. 
+if(PDF_EXPORT){
+  cat("
+  <style>
+  :root{
+    --decorator-outer-offset-left: -6.5px;
+  }
+  </style>")
+}
+```
+
+
+Aside
+================================================================================
+
+
+
+![logo](https://raw.githubusercontent.com/siquette/agoravai/gh-pages/imagem/logo1.png){width=100%}
+
+
+```{r}
+# When in export mode the little dots are unaligned, so fix that. 
+if(PDF_EXPORT){
+  cat("View this CV online with links at _https://siquette.github.io/cv/_")
+} else {
+  cat("[<i class='fas fa-download'></i> Download a PDF of this CV]()")
+}
+```
+
+contact {#contact}
+--------------------------------------------------------------------------------
+
+
+- <i class="fa fa-github"></i> <p class="view"><a href="https://siquette.github.io/cv//">Checkout my curriculum</a></p>
+
+- <i class="fa fa-linkedin-square"></i> <p class="view"><a href="https://www.linkedin.com/in/rodrigo-aroni-siquette/">Visit my Linkedin Profile</a></p>
+
+- <i class="fa fa-envelope"></i> rodrigosiquette@gmail.com
+
+
+
+
+
+LANGUAGE SKILLS {#skills}
+--------------------------------------------------------------------------------
+
+- <i class='fab fa-python'></i> Python
+
+- <i class="fab fa-r-project"></i> R
+
+- <i class="fa fa-globe" aria-hidden="true"></i> Qgis
+
+- <i class="fa fa-globe" aria-hidden="true"></i>  ArcGIS
+
+- <i class="fa fa-html5" aria-hidden="true"></i> HTML5 e CSS3
+
+
+
+```{r}
+build_skill_bars(skills) #esta no arquivo common_variable#
+
+
+```
+
+
+
+
+
+
+
+
+
+
+Main
+================================================================================
+
+Welcome to my portfolio {#title}
+--------------------------------------------------------------------------------
+
+<p align="justify"> Let's work together.</p>
+
+
+ 
+
+
+
+
+
+
+
+Portfolio in R {data-icon=laptop}
+--------------------------------------------------------------------------------
+
+```{r}
+print_section(position_data, 'research_positions')
+```
+
+
+
+Portfolio in Python {data-icon=suitcase}
+--------------------------------------------------------------------------------
+
+::: aside
+ 
+:::
+
+```{r}
+print_section(position_data, 'industry_positions')
+```
+
+<br>
+<br>
+<br>
+
+
+
+
+
+```{r}
+if(PDF_EXPORT){
+  cat("
+  
+Links {data-icon=link}
+--------------------------------------------------------------------------------
+
+<br>
+
+
+")
+  
+  walk2(links, 1:length(links), function(link, index){
+    print(glue('{index}. {link}'))
+  })
+}
+```
+
+
