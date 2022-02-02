@@ -1,5 +1,5 @@
 ---
-title: "CV"
+title: "PORTFOLIO"
 author: rodrigo
 date: "`r Sys.Date()`"
 output:
@@ -54,28 +54,19 @@ Aside
 ================================================================================
 
 
-
 ![logo](https://raw.githubusercontent.com/siquette/agoravai/gh-pages/imagem/logo1.png){width=100%}
 
 
-```{r}
-# When in export mode the little dots are unaligned, so fix that. 
-if(PDF_EXPORT){
-  cat("View this CV online with links at _https://siquette.github.io/cv/_")
-} else {
-  cat("[<i class='fas fa-download'></i> Download a PDF of this CV]()")
-}
-```
 
 contact {#contact}
 --------------------------------------------------------------------------------
 
 
-- <i class="fa fa-github"></i> <p class="view"><a href="https://siquette.github.io/cv//">Checkout my curriculum</a></p>
+<i class="fa fa-github"></i>  [Checkout my curriculum](https://siquette.github.io/cv/)
 
-- <i class="fa fa-linkedin-square"></i> <p class="view"><a href="https://www.linkedin.com/in/rodrigo-aroni-siquette/">Visit my Linkedin Profile</a></p>
+<i class="fa fa-linkedin-square"></i>  [Visit my Linkedin Profile](https://www.linkedin.com/in/rodrigo-aroni-siquette)
 
-- <i class="fa fa-envelope"></i> rodrigosiquette@gmail.com
+<i class="fa fa-envelope"></i> rodrigosiquette@gmail.com
 
 
 
@@ -114,10 +105,13 @@ build_skill_bars(skills) #esta no arquivo common_variable#
 Main
 ================================================================================
 
-Welcome to my portfolio {#title}
---------------------------------------------------------------------------------
+![logo](https://pbs.twimg.com/media/EV4mvsoWAAEbRjH?format=jpg&name=large){width=100%}
 
-<p align="justify"> Let's work together.</p>
+ Welcome to my portfolio {#title}
+--------------------------------------------------------------------------------
+<br><br> 
+
+<h3 align="justify"> Let's work together.</h3>
 
 
  
@@ -137,7 +131,7 @@ print_section(position_data, 'research_positions')
 
 
 
-Portfolio in Python {data-icon=suitcase}
+Portfolio in Python {data-icon=laptop}
 --------------------------------------------------------------------------------
 
 ::: aside
