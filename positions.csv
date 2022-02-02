@@ -1,10 +1,16 @@
 section,in_resume,title,loc,institution,start,end,description_1,description_2,description_3
 education,TRUE,Graduação em Geografia,Faculdade de Filosofia Letras e Ciências Humanas (FFLCH - USP),Universidade de São Paulo (USP),2015,2022,,,
 ,,,,,,,,,
-research_positions,TRUE,Work 1,(https://siquette.github.io/work-1-1/),NA,NA,NA,NA,,
-research_positions,TRUE,Work 2,(https://siquette.github.io/work_2/),NA,NA,NA,NA,,
-research_positions,TRUE,Work 3,(https://siquette.github.io/work_3/),NA,NA,NA,NA,,
-research_positions,TRUE,Work 4,(https://siquette.github.io/work_4/),NA,NA,NA,NA,,
+research_positions,TRUE,[Work 1](https://siquette.github.io/work-1-1/),"abrindo e manipulando dados. - 
+Organizando e Limpando Dados",NA,NA,NA,"<p align=""justify"">  Renomear Variáveis (Rename) - 2. Selecionar Variáveis (Select) -3. Transformar Variáveis (Mutate) -4. Cortar/selecionar Observações (Slice) - 5. Filtrar Observações (Filter) -  6 Combinando Manipulações.Dividindo e Unificando Variáveis Recodificação de Variáveis Ordenando os nossos dados Factors – 7 Identificando Casos/Valores Únicos (distinct) </p>",,
+research_positions,TRUE,[Work 2](https://siquette.github.io/work_2/),"Calculando Estatísticas Resumidas -
+Construindo Tabelas
+",NA,NA,NA,"<p align=""justify""> Estatísticas Resumidas (summarize) -  2 Grupos (group_by) Mutate por Grupo Resumos de Múltiplas Colunas (across()) -  3 Tabelas Estáticas Tabelas Interativas Mudando a Unidade de Observação (Pivot_wide, Pivot_longer) </p>",,
+research_positions,TRUE,[Work 3](https://siquette.github.io/work_3/),"Visualizando os nossos Dados - 
+Juntando Bancos de Dados",NA,NA,NA,"<p align=""justify""> Gráficos A Gramática de Gráficos Estéticas Geometrias - 2 Controlando cores com ‘scales’ Personalização de Gráficos além de geometria -  3 Unidades de Análise Exemplos de Joins Simples (left_join) - 4 Juntando Bancos por Múltiplas Variáveis Bancos e Dados Faltantes (right_join, inner_join, full_join, anti_join) Nesting data (nest, unnest) </p>",,
+research_positions,TRUE,[Work 4](https://siquette.github.io/work_4/),"Mapas e Análises Espaciais -
+Testes Estatísticos e Regressões, -
+Análise de Texto - ",NA,NA,NA,"<p align=""justify""> Dados Espaciais - 2 Testes de Normalidade - 3 Testes de Médias - 4 Testes de Correlação -  5 Regressões Simples Modelos Alternativos - 6 Trabalhando com Polígonos - 7 Aperfeiçoando a Visualização dos mapas - 8 Georeferenciamento - 9 Joins Não-Espaciais - 10 Joins Espaciais  </p>",,
 ,,,,,,,,,
 ,,,,,,,,,
 ,,,,,,,,,
@@ -16,7 +22,7 @@ research_positions,TRUE,Work 4,(https://siquette.github.io/work_4/),NA,NA,NA,NA,
 ,,,,,,,,,
 ,,,,,,,,,
 ,,,,,,,,,
-industry_positions,TRUE,NA,NA,NA,2008,2010,Cargo: auxiliar administrativo,,
+industry_positions,TRUE,[Work 1](https://siquette.github.io/work-1-py/),Analise de serie temporal: COVID-19,NA,,,,,
 ,,,,,,,,,
 ,,,,,,,,,
 ,,,,,,,,,
