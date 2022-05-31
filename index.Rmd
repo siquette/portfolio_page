@@ -111,25 +111,38 @@ Main
 --------------------------------------------------------------------------------
 <br><br> 
 
+<h3 align="justify"> I am Rodrigo Aroni Siquette.</h3>
+<br><br>
+<h3 align="justify"> Inspired by tough problems.</h3>
+<br><br>
 <h3 align="justify"> Let's work together.</h3>
 
 
- 
+![logo](https://raw.githubusercontent.com/siquette/agoravai/gh-pages/imagem/imagem1.gif){width=50%}
 
 
 
 
 
+![logo](https://raw.githubusercontent.com/siquette/agoravai/gh-pages/imagem/tidyverse_website.png){width=50%}
 
-
-Portfolio in R {data-icon=laptop}
+Portfolio in R {data-icon=laptop} 
 --------------------------------------------------------------------------------
+
+
 
 ```{r}
 print_section(position_data, 'research_positions')
 ```
 
+<br>
+<br>
+<br>
 
+
+
+![logo](https://raw.githubusercontent.com/siquette/agoravai/gh-pages/imagem/python-modules.png){width=50%}
+--------------------------------------------------------------------------------
 
 Portfolio in Python {data-icon=laptop}
 --------------------------------------------------------------------------------
@@ -145,8 +158,24 @@ print_section(position_data, 'industry_positions')
 <br>
 <br>
 <br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 
+![logo](https://raw.githubusercontent.com/siquette/agoravai/gh-pages/imagem/to-be.gif){width=100%}
 
 
 
